@@ -42,7 +42,7 @@
   export default {
     data() {
       return {
-        appId: '83caf91f',
+        appId: 'your appId',
         status: 'init',
         ttsWS: null,
         totalRes: '',
@@ -55,8 +55,8 @@
     methods: {
       getWebsocketUrl() {
         return new Promise((resolve, reject) => {
-          const apiKey = 'de71932a67ac3286996aa1bcbceab910';
-          const apiSecret = 'ZDcxNGNhZmMwNGEzNzUzNDc1MjkxZWIx';
+          const apiKey = 'your apiKey';
+          const apiSecret = 'your apiSecret';
           const url = 'wss://spark-api.xf-yun.com/v1.1/chat';
           const host = window.location.host;
           const date = new Date().toGMTString();
@@ -110,7 +110,7 @@
         const params = {
           header: {
             app_id: this.appId,
-            uid: '18969258773',
+            uid: '123456789',
           },
           parameter: {
             chat: {
