@@ -150,6 +150,7 @@
         if(jsonData.header.status!==2){//不为结束就进行添加
             this.requestHandle(jsonData)
         }else {
+            this.requestHandle(jsonData)
             let contentSomething = {
                 ai: this.aiContentRequest,
                 user: this.userInput
